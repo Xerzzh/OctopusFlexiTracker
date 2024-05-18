@@ -63,6 +63,7 @@ Create an automation so that this sensor is updated every hour getting the new d
     entity_id: sensor.octopus_flexi
 
 ```
+
 ## Note
 
 If you appreciate my work and want to help me, I invite you to register in Octopus Energy with my link, we will both earn 50€ discount on the following invoices.
