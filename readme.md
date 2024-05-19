@@ -1,4 +1,3 @@
-
 # OctopusFlexiTracker
 
 <div align="center">
@@ -13,7 +12,7 @@ The repository consists of simple code written in PHP. The file download_prices.
 
 The project works with PhpSpreadsheet, so you will need to install it.
 
-For that you will need to have composer installed on the machine where you are going to run the .
+For this you will need to have PHP and Composer installed on the machine where you are going to run it.
 
 Once composer is installed you will need to launch:
 
@@ -21,10 +20,13 @@ Once composer is installed you will need to launch:
 composer require phpoffice/phpspreadsheet
 ```
 
-Once installed, you will have to modify the crontab of the machine so that these php are executed in the following way.
-
+Once installed, you will have to modify the crontab of the machine so that these PHP are executed in the following way.
 ```bash
 crontab -e
+```
+
+Add the following lines:
+```bash
 59 23 * * * /usr/bin/php /path/to/file/download_prices.php
 0 * * * * /usr/bin/php /path/to/file/update_prices.php
 ```
